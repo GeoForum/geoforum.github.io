@@ -60,7 +60,7 @@ h1 {
 	margin: 0 auto;
 }
 
-.github-box {
+.github-box .github-box-content p {
 	white-space: normal;
 }
 
