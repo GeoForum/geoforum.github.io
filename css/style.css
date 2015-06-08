@@ -60,6 +60,10 @@ h1 {
 	margin: 0 auto;
 }
 
+.github-box {
+	white-space: normal;
+}
+
 @font-face {
 	font-family: 'MuseoSlab500Regular';
 	src: url('../font/Museo_Slab_500-webfont.eot');
