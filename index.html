@@ -24,9 +24,11 @@
 		<br> Kom med forslag og innspill på Github: <a href="https://github.com/GeoForum/geoforum.github.io/issues" target="_blank">https://github.com/GeoForum/geoforum.github.io/issues</a>
 		</p>
 		<p>
-		<h3>
+		<h2>
 		Presentasjoner holdt i forbindelse med prosjektet finner du på <a href="https://github.com/GeoForum/Presentasjoner">https://github.com/GeoForum/Presentasjoner</a>
-		</h3>
+		</h2>
+		
+		<h1>Meld interesse for prosjektet her: http://goo.gl/forms/N0HAKzepcQ</h1>
 		</p>
 	</div>
 
@@ -42,6 +44,13 @@
 
 
 	<script>
+		$projects = $(".projects");
+		var repopath = 'https://github.com/GeoForum/ressurser_kartdata_kompetanse';
+		$div = $('<div data-repo="'+repopath+'" class="github-box-wrap">');
+		$projects.append($div);
+		
+		$("[data-repo]").github();
+	
 		$.get("https://api.github.com/users/geoforum/repos", function(repos) {
 			for (var k in repos) {
 				$projects = $(".projects");
